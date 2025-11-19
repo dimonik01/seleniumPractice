@@ -17,7 +17,7 @@ public class PracticeFormPage {
     private By table = By.cssSelector(".table > tbody");
 
     public String getFirstNameInputText(){
-        return driver.findElement(firstNameInput).getText();
+        return driver.findElement(firstNameInput).getAttribute("value");
     }
 
     public String getLastNameInputText(){
@@ -33,19 +33,19 @@ public class PracticeFormPage {
     }
 
     public boolean getRadiobuttonFemaleStatus(){
-        return driver.findElement(radiobuttonMale).isEnabled();
+        return driver.findElement(radiobuttonFemale).isEnabled();
     }
 
     public boolean getRadiobuttonOtherStatus(){
-        return driver.findElement(radiobuttonMale).isEnabled();
+        return driver.findElement(radiobuttonOther).isEnabled();
     }
 
     public String getMobileInputText(){
-        return driver.findElement(radiobuttonMale).getText();
+        return driver.findElement(mobileInput).getText();
     }
 
     public String getSubmitButton(){
-        return driver.findElement(radiobuttonMale).getText();
+        return driver.findElement(submitButton).getText();
     }
 
     public By getTable(){

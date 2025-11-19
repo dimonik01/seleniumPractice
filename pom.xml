@@ -55,6 +55,11 @@
             <version>3.26.3</version> <!-- актуальная версия на 2025 -->
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v125</artifactId>
+            <version>4.21.0</version>
+        </dependency>
     </dependencies>
 
 

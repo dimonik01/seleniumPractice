@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
@@ -35,11 +36,11 @@ public class TextBoxFormTest {
     @BeforeAll
     static void driverSetup(){
         WebDriverManager.chromedriver().setup();
+
     }
 
     @BeforeEach
     void initDriver(){
-        driver = new ChromeDriver();
         driver.get("https://demoqa.com/text-box");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     }
