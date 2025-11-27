@@ -1,4 +1,4 @@
-package org.seleniumPractice.pages;
+package pomPractice.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,15 +6,15 @@ import org.openqa.selenium.WebDriver;
 public class PracticeFormPage {
     private WebDriver driver;
     //локаторы
-    private By firstNameInput = By.id("firstName");
-    private By lastNameInput = By.id("lastName");
-    private By emailInput = By.id("userEmail");
-    private By radiobuttonMale = By.id("gender-radio-1");
-    private By radiobuttonFemale = By.id("gender-radio-2");
-    private By radiobuttonOther = By.id("gender-radio-3");
-    private By mobileInput = By.id("userNumber");
-    private By submitButton = By.id("submit");
-    private By table = By.cssSelector(".table > tbody");
+    private static final By firstNameInput = By.id("firstName");
+    private static final By lastNameInput = By.id("lastName");
+    private static final By emailInput = By.id("userEmail");
+    private static final By radiobuttonMale = By.id("gender-radio-1");
+    private static final By radiobuttonFemale = By.id("gender-radio-2");
+    private static final By radiobuttonOther = By.id("gender-radio-3");
+    private static final By mobileInput = By.id("userNumber");
+    private static final By submitButton = By.id("submit");
+    private static final By table = By.cssSelector(".table > tbody");
 
     public String getFirstNameInputText(){
         return driver.findElement(firstNameInput).getAttribute("value");

@@ -1,4 +1,4 @@
-package org.seleniumPractice.utils;
+package pomPractice.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.devtools.DevTools;

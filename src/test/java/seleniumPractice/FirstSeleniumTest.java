@@ -1,4 +1,4 @@
-package org.seleniumPractice;
+package seleniumPractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
@@ -30,7 +30,7 @@ public class FirstSeleniumTest {
 
     @Test
     void shouldGoToGoogle(){
-        driver.get("https://www.google.com");
-        assertTrue(driver.getTitle().toLowerCase().contains("google"), "We're at google");
+        driver.get("https://demoqa.com/automation-practice-form");
+        assertTrue(driver.getTitle().toLowerCase().contains("DEMOQA"), "We're at google");
     }
 }

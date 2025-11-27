@@ -1,9 +1,9 @@
-package org.seleniumPractice.tests;
+package pomPractice.tests;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.seleniumPractice.pages.PageObjectModelPracticePage;
+import pomPractice.pages.PageObjectModelPracticePage;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
